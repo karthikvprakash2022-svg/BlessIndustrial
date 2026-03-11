@@ -53,9 +53,36 @@
     <footer>
         <p>© 2026 Bless Industrial. All rights reserved.</p>
     </footer>
+<script>
 
+const nav = document.querySelector(".main-nav");
+const indicator = document.querySelector(".nav-indicator");
+const links = document.querySelectorAll(".main-nav a");
+
+links.forEach(link => {
+
+link.addEventListener("mouseenter", () => {
+
+const rect = link.getBoundingClientRect();
+const navRect = nav.getBoundingClientRect();
+
+indicator.style.width = rect.width + "px";
+indicator.style.left = (rect.left - navRect.left) + "px";
+
+});
+
+});
+
+nav.addEventListener("mouseleave", () => {
+
+indicator.style.width = "0px";
+
+});
+
+</script>
 </body>
 
 
 </html>
+
 
