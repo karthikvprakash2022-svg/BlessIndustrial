@@ -452,3 +452,8 @@ transform:translateY(0);
 }
 
 
+.map-container{
+margin-top:40px;
+border-radius:12px;
+overflow:hidden;
+}
