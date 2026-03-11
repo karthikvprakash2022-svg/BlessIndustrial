@@ -80,12 +80,17 @@ nav a:hover::after {
 /* ================= HERO ================= */
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./2.jpg");
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("./2.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
+
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h2 {
@@ -388,21 +393,4 @@ nav a{
     color: #9ca3af;
 
 }
-
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("./2.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 120px 20px;
-    text-align: center;
-
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-
 
