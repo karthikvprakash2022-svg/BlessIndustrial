@@ -332,28 +332,43 @@ footer {
 
 /* ================= RESPONSIVE ================= */
 
-@media(max-width:768px) {
-    .hero h2 {
-        font-size: 28px;
-    }
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    header {
-        text-align: center;
-    }
-    nav a {
-        display: inline-block;
-        margin: 8px;
-    }
+@media(max-width:768px){
+
+.hero{
+    min-height: 90vh;
+    padding: 40px 20px;
 }
 
+.hero h2{
+    font-size: 26px;
+}
+
+.hero p{
+    font-size: 14px;
+}
+
+.service-grid{
+    grid-template-columns:1fr;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+header{
+    text-align:center;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+}
 
 /* ===== PRODUCT SEARCH ===== */
 
@@ -387,6 +402,7 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
 
 
 
