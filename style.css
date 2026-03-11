@@ -393,3 +393,28 @@ outline:none;
 .product-search::placeholder{
 color:#9ca3af;
 }
+
+/* ===== NAV SLIDING INDICATOR ===== */
+
+.main-nav{
+position:relative;
+display:flex;
+gap:22px;
+}
+
+.main-nav a{
+position:relative;
+padding:6px 4px;
+}
+
+/* moving yellow line */
+
+.nav-indicator{
+position:absolute;
+bottom:-4px;
+height:3px;
+width:0;
+background:#ffd000;
+border-radius:2px;
+transition:all .35s ease;
+}
