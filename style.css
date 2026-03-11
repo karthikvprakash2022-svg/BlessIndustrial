@@ -80,7 +80,7 @@ nav a:hover::after {
 /* ================= HERO ================= */
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("2.JPG");
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("2.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -373,4 +373,5 @@ footer {
     color: #9ca3af;
 
 }
+
 
