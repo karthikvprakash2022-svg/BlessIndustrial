@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products | Bless Industrial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<a href="https://wa.me/+917994565934" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+
+    <img src="images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+
+</a>
+
+<body>
+
+    <header>
+        <h1>Bless Industrial</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="container">
+
+            <h2>Our Products</h2>
+
+            <input type="text" id="productSearch" placeholder="Search products..." onkeyup="searchProducts()" class="product-search">
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="images/product1.jpg" onclick="openModal(this.src)">
+                    <h3>Adjustable Jack</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product2.jpg" onclick="openModal(this.src)">
+                    <h3>Concrete Sheet</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/span.jpg" onclick="openModal(this.src)">
+                    <h3>Adjustable Span</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product3.jpg" onclick="openModal(this.src)">
+                    <h3>Lintel</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="modal" id="modal">
+        <span class="close-modal" onclick="closeModal()">✕</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("modalImg").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function searchProducts() {
+
+            let input = document.getElementById("productSearch").value.toLowerCase();
+            let cards = document.querySelectorAll(".product-card");
+
+            cards.forEach(card => {
+
+                let title = card.querySelector("h3").textContent.toLowerCase();
+
+                if (title.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>
